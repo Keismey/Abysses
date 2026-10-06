@@ -464,7 +464,8 @@ function music(k){mKey=k;if(!MUSIC[k])return;if(!snd){if(mEl){mEl.pause()}return
 function musicKick(){if(mKey&&snd&&MUSIC[mKey]&&(!mEl||mEl.paused))music(mKey)}
 document.addEventListener('visibilitychange',()=>{if(document.hidden){if(mEl)mEl.pause()}else musicKick()});
 function sndT(){snd=snd?0:1;save();if(!snd&&mEl)mEl.pause();else music(mKey);opts()}
-const VER='1.0.1';const PN=[
+const VER='1.0.2';const PN=[
+{v:'1.0.2',d:'6 octobre 2026',l:['Correction : l’installation de l’appli sur téléphone.','Correction : le jeu ne touche plus aux données hors ligne de tes autres jeux du même site.']},
 {v:'1.0.1',d:'6 octobre 2026',l:['Écran de démarrage : logo Keismey Studio, puis écran titre.','Le jeu se joue aussi sur ordinateur, dans une colonne au format téléphone.','Nouveau bouton « Notes de mise à jour » dans les Réglages.']},
 {v:'1.0.0',d:'6 octobre 2026',l:['Première version en ligne.','5 zones de pêche et 14 espèces, dont le Léviathan des profondeurs.','Grotte et Fosse : matériel limité, poissons qui plongent, ligne qui peut casser.','Équipement des profondeurs : Canne et Ligne niveaux 7 et 8.','Grands contrats à partir du niveau 10.','Sauvegarde et chargement de partie, installation sur l’écran d’accueil, jeu hors ligne.','Version anglaise.']}];
 function pnShow(auto){ov.innerHTML=`<h2>Notes de mise à jour</h2><div class="pnl">${PN.map((p,i)=>`<details${i?'':' open'}><summary>Version ${p.v}<small>${p.d}</small></summary><ul>${p.l.map(x=>`<li>${x}</li>`).join('')}</ul></details>`).join('')}</div><div class="tcol"><button class="b" onclick="${auto?'ov.hidden=true;village()':'opts()'}">${auto?'Fermer':'Retour'}</button></div>`;ov.classList.remove('clr');ov.hidden=false}

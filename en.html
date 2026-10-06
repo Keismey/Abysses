@@ -464,7 +464,8 @@ function music(k){mKey=k;if(!MUSIC[k])return;if(!snd){if(mEl){mEl.pause()}return
 function musicKick(){if(mKey&&snd&&MUSIC[mKey]&&(!mEl||mEl.paused))music(mKey)}
 document.addEventListener('visibilitychange',()=>{if(document.hidden){if(mEl)mEl.pause()}else musicKick()});
 function sndT(){snd=snd?0:1;save();if(!snd&&mEl)mEl.pause();else music(mKey);opts()}
-const VER='1.0.1';const PN=[
+const VER='1.0.2';const PN=[
+{v:'1.0.2',d:'October 6, 2026',l:['Fix: installing the app on phones.','Fix: the game no longer touches the offline data of other games on the same site.']},
 {v:'1.0.1',d:'October 6, 2026',l:['Startup screen: Keismey Studio logo, then a title screen.','The game can also be played on a computer, in a phone-shaped column.','New “Patch notes” button in Settings.']},
 {v:'1.0.0',d:'October 6, 2026',l:['First online release.','5 fishing zones and 14 species, including the Leviathan of the Deep.','Grotto and Trench: limited gear, diving fish, a line that can snap.','Deep-water gear: Rod and Line levels 7 and 8.','Grand contracts from level 10.','Save and load your game, install to the home screen, offline play.','English version.']}];
 function pnShow(auto){ov.innerHTML=`<h2>Patch notes</h2><div class="pnl">${PN.map((p,i)=>`<details${i?'':' open'}><summary>Version ${p.v}<small>${p.d}</small></summary><ul>${p.l.map(x=>`<li>${x}</li>`).join('')}</ul></details>`).join('')}</div><div class="tcol"><button class="b" onclick="${auto?'ov.hidden=true;village()':'opts()'}">${auto?'Close':'Back'}</button></div>`;ov.classList.remove('clr');ov.hidden=false}

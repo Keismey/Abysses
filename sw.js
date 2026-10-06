@@ -1,5 +1,5 @@
 // Abysses — service worker. Changer VERSION à chaque mise en ligne.
-const VERSION = 'abysses-1.0.1';
+const VERSION = 'abysses-1.0.2';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './en.html', './manifest-en.webmanifest',
   './a/0989dc3753eb.webp',
   './a/1069aa76976e.webp',
@@ -110,7 +110,7 @@ self.addEventListener('install', e => {
 self.addEventListener('activate', e => {
   e.waitUntil(
     caches.keys()
-      .then(keys => Promise.all(keys.filter(k => k !== VERSION && k !== FONTS).map(k => caches.delete(k))))
+      .then(keys => Promise.all(keys.filter(k => k.startsWith('abysses-') && k !== VERSION && k !== FONTS).map(k => caches.delete(k))))
       .then(() => self.clients.claim())
   );
 });
