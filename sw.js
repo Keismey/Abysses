@@ -1,5 +1,5 @@
 // Abysses — service worker. Changer VERSION à chaque mise en ligne.
-const VERSION = 'abysses-1.0.2';
+const VERSION = 'abysses-1.0.2b';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './en.html', './manifest-en.webmanifest',
   './a/0989dc3753eb.webp',
   './a/1069aa76976e.webp',
@@ -130,6 +130,11 @@ self.addEventListener('fetch', e => {
     return;
   }
   if (url.origin !== location.origin) return;
+  // le manifest passe toujours par le réseau d'abord, pour que l'installation voie la dernière version
+  if (url.pathname.endsWith('.webmanifest')) {
+    e.respondWith(fetch(req).then(r => { if (r.ok) { const c = r.clone(); caches.open(VERSION).then(x => x.put(req, c)); } return r; }).catch(() => caches.match(req)));
+    return;
+  }
   e.respondWith(
     caches.match(req, { ignoreSearch: true }).then(hit => hit ||
       fetch(req).then(r => {
