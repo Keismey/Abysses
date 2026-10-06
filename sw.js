@@ -1,5 +1,5 @@
 // Abysses — service worker. Changer VERSION à chaque mise en ligne.
-const VERSION = 'abysses-1.0.0';
+const VERSION = 'abysses-1.0.1';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './en.html', './manifest-en.webmanifest',
   './a/0989dc3753eb.webp',
   './a/1069aa76976e.webp',
@@ -23,6 +23,7 @@ const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.
   './a/3fa3a8b11d28.webp',
   './a/3ffe766f60f8.webp',
   './a/40632a302982.webp',
+  './a/4303390dd241.webp',
   './a/44728c4cf605.webp',
   './a/4477e117409c.webp',
   './a/4536fc4760fb.webp',
@@ -45,6 +46,7 @@ const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.
   './a/7345a6447e6e.webp',
   './a/73d4cad86f8c.webp',
   './a/74d0fda808ee.webp',
+  './a/75e83e3367e3.webp',
   './a/7663f49b2292.webp',
   './a/778b19f55a17.mp3',
   './a/7799cf0da344.webp',
