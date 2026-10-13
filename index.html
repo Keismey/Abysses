@@ -608,4 +608,5 @@ let last=performance.now();
 if(phase==='night'||phase==='dawn'){fillSh();setBg();$('zb').textContent=ZN[zn].n;endCheck()}else village();
 (()=>{if(TESTM)return;const d=document.createElement('div');d.id='spl';d.innerHTML=`<div class="tt"><div style="text-align:center"><h1>Abysses</h1></div><p class="go">${matchMedia('(hover:hover) and (pointer:fine)').matches?'Cliquez pour commencer':'Touchez pour commencer'}</p></div><div class="lg">${SPL.logo?`<img src="${SPL.logo}" alt="Keismey Studio">`:'<b>KEISMEY STUDIO</b>'}</div>`;$('stage').appendChild(d);const lg=d.querySelector('.lg');let st=0;const toT=()=>{if(st)return;st=1;lg.style.opacity=0;setTimeout(()=>lg.remove(),700)};setTimeout(toT,2300);d.addEventListener('pointerdown',e=>{e.stopPropagation();if(!st){toT();return}if(st===2)return;st=2;d.classList.add('out');setTimeout(()=>d.remove(),650)});})();
 
-</script></body></html>
+</script><!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cdb82226cd1b401d9e4f4e899f9b8425"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>
