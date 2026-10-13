@@ -104,7 +104,8 @@ const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.
 const FONTS = 'abysses-fonts';
 
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(VERSION).then(c => c.addAll(CORE)));
+  // cache: 'reload' : on ne recopie pas une ancienne version gardée par le navigateur (GitHub Pages la garde 10 min)
+  e.waitUntil(caches.open(VERSION).then(c => c.addAll(CORE.map(f => new Request(f, { cache: 'reload' })))));
 });
 
 self.addEventListener('activate', e => {
@@ -133,6 +134,17 @@ self.addEventListener('fetch', e => {
   // le manifest passe toujours par le réseau d'abord, pour que l'installation voie la dernière version
   if (url.pathname.endsWith('.webmanifest')) {
     e.respondWith(fetch(req).then(r => { if (r.ok) { const c = r.clone(); caches.open(VERSION).then(x => x.put(req, c)); } return r; }).catch(() => caches.match(req)));
+    return;
+  }
+  // les pages passent par le réseau d'abord : si VERSION n'est pas changée à une mise en ligne, les joueurs reçoivent quand même la
+  // dernière page (les images, au nom haché, restent en cache d'abord). Le cache ne sert que hors connexion.
+  if (req.mode === 'navigate' || url.pathname.endsWith('.html') || url.pathname.endsWith('/')) {
+    e.respondWith(
+      fetch(req.url, { cache: 'no-cache' }).then(r => {
+        if (r.ok) { const copy = r.clone(); caches.open(VERSION).then(c => c.put(req, copy)); }
+        return r;
+      }).catch(() => caches.match(req, { ignoreSearch: true }).then(hit => hit || caches.match('./index.html')))
+    );
     return;
   }
   e.respondWith(
