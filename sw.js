@@ -1,5 +1,5 @@
 // Abysses — service worker. Changer VERSION à chaque mise en ligne.
-const VERSION = 'abysses-1.0.4';
+const VERSION = 'abysses-1.0.5';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './en.html', './ks-back.js', './ks-studio.js', './manifest-en.webmanifest', './fonts/fonts.css', './fonts/cinzel-600.woff', './fonts/cinzel-700.woff', './fonts/fredoka-400.woff', './fonts/fredoka-600.woff', './fonts/im-fell-english-sc-400.woff',
   './a/0989dc3753eb.webp',
   './a/1069aa76976e.webp',
