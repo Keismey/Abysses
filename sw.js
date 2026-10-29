@@ -1,5 +1,5 @@
 // Abysses — service worker. Changer VERSION à chaque mise en ligne.
-const VERSION = 'abysses-1.0.7';
+const VERSION = 'abysses-1.0.8';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './en.html', './ks-back.js', './ks-studio.js', './manifest-en.webmanifest', './fonts/fonts.css', './fonts/cinzel-600.woff', './fonts/cinzel-700.woff', './fonts/fredoka-400.woff', './fonts/fredoka-600.woff', './fonts/im-fell-english-sc-400.woff',
   './a/0989dc3753eb.webp',
   './a/1069aa76976e.webp',
@@ -104,8 +104,9 @@ const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.
 const FONTS = 'abysses-fonts';
 
 self.addEventListener('install', e => {
-  // cache: 'reload' : on ne recopie pas une ancienne version gardée par le navigateur (GitHub Pages la garde 10 min)
-  e.waitUntil(caches.open(VERSION).then(c => c.addAll(CORE.map(f => new Request(f, { cache: 'reload' })))));
+  // cache: 'reload' : on ne recopie pas une ancienne version gardée par le navigateur (GitHub Pages la garde 10 min).
+  // Images et musiques (a/, nom haché : un fichier changé change de nom) : reprises du navigateur si la page vient de les charger.
+  e.waitUntil(caches.open(VERSION).then(c => c.addAll(CORE.map(f => new Request(f, { cache: f.startsWith('./a/') ? 'default' : 'reload' })))));
 });
 
 self.addEventListener('activate', e => {
