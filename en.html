@@ -651,6 +651,6 @@ function bkBack(){
   if(phase==='night'||phase==='dawn'){if(st!=='fight'&&st!=='result')leave();return}
   if(phase==='day'&&st==='idle')bkAsk('Back to the title screen?','Your game is saved.','Title screen',splAgain);
 }
-KSBack.init({back:bkBack,lang:()=>'en'});
+KSBack.init({back:bkBack,lang:()=>'en',title:()=>{const s=$('spl');return !!s&&!s.classList.contains('out')&&!s.querySelector('.lg')&&!bkVis(ov)}});
 </script><!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cdb82226cd1b401d9e4f4e899f9b8425"}'></script><!-- End Cloudflare Web Analytics -->
 </body></html>
