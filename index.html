@@ -483,7 +483,8 @@ function musicKick(){if(mKey&&mv>0&&MUSIC[mKey]&&(!mEl||mEl.paused))music(mKey)}
 document.addEventListener('visibilitychange',()=>{if(document.hidden){if(mEl)mEl.pause()}else musicKick()});
 function setV(k,v){v=v/100;if(k==='m'){mv=v;if(!mv&&mEl)mEl.pause();else if(mEl&&!mEl.paused)fade(mEl,.35*mv,200);else music(mKey)}else{sv=v;if(MB)MB.gain.value=.9*sv}save()}
 function sndT(){snd=snd?0:1;save();if(!snd&&mEl)mEl.pause();else music(mKey);opts()}
-const VER='1.0.6';const PN=[
+const VER='1.0.7';const PN=[
+{v:'1.0.7',d:'31 octobre 2026',l:['Petits écrans : les fenêtres trop hautes (Options) se font défiler jusqu’en haut, curseurs de volume compris.','Boutons plus faciles à toucher : Options, Collection, Panier, Carnet, achats de l’Atelier, vitrine de l’étal, fumoir.','On peut zoomer à deux doigts pour agrandir les textes (sauf sur le lac).','Téléphone couché : un écran demande de le remettre droit.','Musiques téléchargées seulement à la première écoute, et mieux lues hors connexion sur iPhone.']},
 {v:'1.0.6',d:'29 octobre 2026',l:['Démarrage plus rapide : l’écran titre s’affiche sans attendre toutes les images, et la musique se charge au premier toucher.','Écran titre : un bouton « Hub » ramène aux autres jeux du studio.','Options : bouton « Retour au hub », et le même ordre que dans les autres jeux du studio.']},
 {v:'1.0.5',d:'26 octobre 2026',l:['Options : crédits du jeu.']},
 {v:'1.0.4',d:'19 octobre 2026',l:['Options : volume de la musique et des bruitages séparés, vibrations à activer ou couper, signaler un bug, soutenir le studio, retour à l’écran titre.','Écran titre : « Touche pour commencer ».']},
