@@ -1,8 +1,10 @@
 // Abysses — service worker. Changer VERSION à chaque mise en ligne.
 const VERSION = 'abysses-1.0.11';
 // Musiques (2,8 Mo) : hors du pré-cache, gardées à la première écoute dans un cache à part
-// qui survit aux mises à jour. Changer le numéro si un MP3 change.
+// qui survit aux mises à jour. MP3 = les musiques en service : ajouter ici un nouveau fichier,
+// les anciens sont retirés du cache à l'activation.
 const MEDIA = 'abysses-media-1';
+const MP3 = ['./a/778b19f55a17.mp3', './a/c91eb1aedba1.mp3'];
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './en.html', './ks-back.js', './ks-studio.js', './manifest-en.webmanifest', './fonts/fonts.css', './fonts/cinzel-600.woff', './fonts/cinzel-700.woff', './fonts/fredoka-400.woff', './fonts/fredoka-600.woff', './fonts/im-fell-english-sc-400.woff',
   './a/0989dc3753eb.webp',
   './a/1069aa76976e.webp',
@@ -113,7 +115,17 @@ self.addEventListener('install', e => {
 self.addEventListener('activate', e => {
   e.waitUntil(
     caches.keys()
-      .then(keys => Promise.all(keys.filter(k => k.startsWith('abysses-') && k !== VERSION && k !== FONTS && k !== MEDIA).map(k => caches.delete(k))))
+      .then(keys => {
+        const old = keys.filter(k => k.startsWith('abysses-') && k !== VERSION && k !== FONTS && k !== MEDIA);
+        const keep = MP3.map(f => new URL(f, location).pathname);
+        return caches.open(MEDIA).then(media =>
+          // musiques déjà pré-cachées par une ancienne version : recopiées dans MEDIA avant le nettoyage
+          Promise.all(keep.map(p => media.match(p).then(have => have || Promise.all(old.map(k => caches.open(k).then(c => c.match(p))))
+            .then(hits => { const hit = Array.isArray(hits) ? hits.find(Boolean) : null; if (hit) return media.put(p, hit); }))))
+            .then(() => media.keys())
+            .then(ks => Promise.all(ks.filter(r => !keep.includes(new URL(r.url).pathname)).map(r => media.delete(r))))
+        ).then(() => Promise.all(old.map(k => caches.delete(k))));
+      })
       .then(() => self.clients.claim())
   );
 });
@@ -164,16 +176,20 @@ self.addEventListener('fetch', e => {
 
 // Musique : le navigateur la lit par plages (en-tête Range). Le fichier entier est gardé dans MEDIA ;
 // on y découpe la plage demandée (réponse 206, exigée par Safari pour lire un son servi par le service worker).
+const loading = {};
 function music(e, url) {
-  const range = e.request.headers.get('range');
-  return caches.match(url.pathname, { cacheName: MEDIA }).then(hit => {
+  const range = e.request.headers.get('range'), p = url.pathname;
+  return caches.match(p, { cacheName: MEDIA }).then(hit => {
     if (!hit) {
-      e.waitUntil(fetch(url.pathname).then(full => { if (full.status === 200) return caches.open(MEDIA).then(c => c.put(url.pathname, full)); }).catch(() => {}));
+      // un seul téléchargement complet par fichier, même si le navigateur envoie plusieurs demandes
+      if (!loading[p]) loading[p] = fetch(p).then(full => { if (full.status === 200) return caches.open(MEDIA).then(c => c.put(p, full)); })
+        .catch(() => {}).then(() => { delete loading[p]; });
+      e.waitUntil(loading[p]);
       return fetch(e.request);
     }
     if (!range) return hit;
-    return hit.arrayBuffer().then(buf => {
-      const m = /bytes=(\d*)-(\d*)/.exec(range) || [], size = buf.byteLength;
+    return hit.blob().then(buf => {
+      const m = /bytes=(\d*)-(\d*)/.exec(range) || [], size = buf.size;
       const start = m[1] ? +m[1] : m[2] ? Math.max(0, size - +m[2]) : 0;
       const end = m[1] && m[2] ? Math.min(+m[2], size - 1) : size - 1;
       if (start >= size || start > end) return new Response(null, { status: 416, headers: { 'Content-Range': `bytes */${size}` } });
