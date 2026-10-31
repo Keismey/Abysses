@@ -32,7 +32,7 @@
 :root[data-theme="dark"]{--fond:#03141a;--or:#ffd166;--ecume:#e8f1f2}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 html,body{height:100%;margin:0}
-body{background:var(--fond);color:var(--ecume);font-family:'Fredoka',system-ui,sans-serif;display:flex;flex-direction:column;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none}
+body{background:var(--fond);color:var(--ecume);font-family:'Fredoka',system-ui,sans-serif;display:flex;flex-direction:column;overflow:hidden;touch-action:none;touch-action:pinch-zoom;user-select:none;-webkit-user-select:none}
 #stage{flex:1;min-height:0;position:relative;display:flex;align-items:center;justify-content:center;width:100%;max-width:min(100vw,calc(100dvh*.5625));margin:0 auto;overflow:hidden}@media (min-aspect-ratio:3/4){body{background:radial-gradient(ellipse at 50% 40%,#0c2f38 0%,#04161c 55%,#010507 100%)}body::before{content:'';position:fixed;inset:-40px;background:var(--tbg) center/cover;filter:blur(28px) brightness(.45) saturate(1.1);opacity:.9;pointer-events:none}#stage{box-shadow:0 0 0 1px #ffd16626,0 0 60px #000c}}
 canvas{display:block;touch-action:none}
 #bar{position:absolute;left:0;right:0;bottom:12px;z-index:2;display:flex;justify-content:center;gap:8px}#bar .tb{background:#03141acc;color:var(--or);border:1px solid #ffd16688;font-size:14px;padding:9px 13px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}.b:disabled{opacity:.4}.s{font-size:15px;padding:8px 14px}small{opacity:.7}
@@ -265,10 +265,10 @@ for(const k in IMG){const i=new Image();i.onload=()=>{SPR[k]=i;for(const [T,c] o
 const UP=18,PX=-56;let REFL=null;const PIERI=new Image();
 PIERI.src=PIER.uri;
 const BGI=BGD.map(d=>{const i=new Image();i.src=d;return i});
-function fit(){const s=$('stage'),sw=s.clientWidth,sh=s.clientHeight,d=devicePixelRatio||1;let k;
+function fit(){if(window.visualViewport&&visualViewport.scale>1.01)return;const s=$('stage'),sw=s.clientWidth,sh=s.clientHeight,d=devicePixelRatio||1;let k;
 if(sw/sh<=W/560){k=sw/W;H=Math.max(560,Math.min(820,Math.round(sh/k)))}else{k=sh/560;H=560}
 cv.style.width=W*k+'px';cv.style.height=H*k+'px';cv.width=Math.round(W*k*d);cv.height=Math.round(H*k*d);ctx.setTransform(k*d,0,0,k*d,0,0);SC=k*d}
-addEventListener('resize',fit);fit();try{const tb=SPL.tbg||BGD[2];document.documentElement.style.setProperty('--tbg',`url(${tb})`)}catch(e){}
+addEventListener('resize',fit);if(window.visualViewport)visualViewport.addEventListener('resize',fit);fit();try{const tb=SPL.tbg||BGD[2];document.documentElement.style.setProperty('--tbg',`url(${tb})`)}catch(e){}
 
 const BOATI=new Image();BOATI.src='a/bf6d3f7488f2.webp';
 
