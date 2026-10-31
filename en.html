@@ -32,7 +32,7 @@
 :root[data-theme="dark"]{--fond:#03141a;--or:#ffd166;--ecume:#e8f1f2}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 html,body{height:100%;margin:0}
-body{background:var(--fond);color:var(--ecume);font-family:'Fredoka',system-ui,sans-serif;display:flex;flex-direction:column;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none}
+body{background:var(--fond);color:var(--ecume);font-family:'Fredoka',system-ui,sans-serif;display:flex;flex-direction:column;overflow:hidden;touch-action:none;touch-action:pinch-zoom;user-select:none;-webkit-user-select:none}
 #stage{flex:1;min-height:0;position:relative;display:flex;align-items:center;justify-content:center;width:100%;max-width:min(100vw,calc(100dvh*.5625));margin:0 auto;overflow:hidden}@media (min-aspect-ratio:3/4){body{background:radial-gradient(ellipse at 50% 40%,#0c2f38 0%,#04161c 55%,#010507 100%)}body::before{content:'';position:fixed;inset:-40px;background:var(--tbg) center/cover;filter:blur(28px) brightness(.45) saturate(1.1);opacity:.9;pointer-events:none}#stage{box-shadow:0 0 0 1px #ffd16626,0 0 60px #000c}}
 #rot{display:none;position:fixed;inset:0;z-index:100;background:#03141af5;color:var(--or);flex-direction:column;align-items:center;justify-content:center;gap:14px;font:700 18px Cinzel,Fredoka,serif;letter-spacing:.04em;text-align:center;padding:20px}#rot svg{width:54px;height:54px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;animation:rot 2.4s ease-in-out infinite}@keyframes rot{0%,30%{transform:rotate(-90deg)}60%,100%{transform:rotate(0)}}@media (prefers-reduced-motion:reduce){#rot svg{animation:none}}@media (orientation:landscape) and (max-height:500px) and (pointer:coarse){#rot{display:flex}html:has(input:focus,textarea:focus) #rot{display:none}}
 canvas{display:block;touch-action:none}
@@ -266,10 +266,10 @@ for(const k in IMG){const i=new Image();i.onload=()=>{SPR[k]=i;for(const [T,c] o
 const UP=18,PX=-56;let REFL=null;const PIERI=new Image();
 PIERI.src=PIER.uri;
 const BGI=BGD.map(d=>{const i=new Image();i.src=d;return i});
-function fit(){const s=$('stage'),sw=s.clientWidth,sh=s.clientHeight,d=devicePixelRatio||1;let k;
+function fit(){if(window.visualViewport&&visualViewport.scale>1.01)return;const s=$('stage'),sw=s.clientWidth,sh=s.clientHeight,d=devicePixelRatio||1;let k;
 if(sw/sh<=W/560){k=sw/W;H=Math.max(560,Math.min(820,Math.round(sh/k)))}else{k=sh/560;H=560}
 cv.style.width=W*k+'px';cv.style.height=H*k+'px';cv.width=Math.round(W*k*d);cv.height=Math.round(H*k*d);ctx.setTransform(k*d,0,0,k*d,0,0);SC=k*d}
-addEventListener('resize',fit);fit();try{const tb=SPL.tbg||BGD[2];document.documentElement.style.setProperty('--tbg',`url(${tb})`)}catch(e){}
+addEventListener('resize',fit);if(window.visualViewport)visualViewport.addEventListener('resize',fit);fit();try{const tb=SPL.tbg||BGD[2];document.documentElement.style.setProperty('--tbg',`url(${tb})`)}catch(e){}
 
 const BOATI=new Image();BOATI.src='a/bf6d3f7488f2.webp';
 
