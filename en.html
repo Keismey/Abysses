@@ -268,7 +268,7 @@ const BGI=BGD.map(d=>{const i=new Image();i.src=d;return i});
 function fit(){if(window.visualViewport&&visualViewport.scale>1.01)return;const s=$('stage'),sw=s.clientWidth,sh=s.clientHeight,d=devicePixelRatio||1;let k;
 if(sw/sh<=W/560){k=sw/W;H=Math.max(560,Math.min(820,Math.round(sh/k)))}else{k=sh/560;H=560}
 cv.style.width=W*k+'px';cv.style.height=H*k+'px';cv.width=Math.round(W*k*d);cv.height=Math.round(H*k*d);ctx.setTransform(k*d,0,0,k*d,0,0);SC=k*d}
-addEventListener('resize',fit);fit();try{const tb=SPL.tbg||BGD[2];document.documentElement.style.setProperty('--tbg',`url(${tb})`)}catch(e){}
+addEventListener('resize',fit);if(window.visualViewport)visualViewport.addEventListener('resize',fit);fit();try{const tb=SPL.tbg||BGD[2];document.documentElement.style.setProperty('--tbg',`url(${tb})`)}catch(e){}
 
 const BOATI=new Image();BOATI.src='a/bf6d3f7488f2.webp';
 
