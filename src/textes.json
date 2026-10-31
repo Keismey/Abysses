@@ -1,0 +1,1454 @@
+{
+ "t001": {
+  "fr": "fr",
+  "en": "en"
+ },
+ "t002": {
+  "fr": "Pêche de nuit, vends ta prise au village et perce les secrets des abysses. Gratuit, sans pub, dans le navigateur",
+  "en": "Fish by night, sell your catch in the village and uncover the secrets of the abyss. Free, no ads, in your browser"
+ },
+ "t003": {
+  "fr": "",
+  "en": "en.html"
+ },
+ "t004": {
+  "fr": "fr_FR",
+  "en": "en_GB"
+ },
+ "t005": {
+  "fr": "en_GB",
+  "en": "fr_FR"
+ },
+ "t006": {
+  "fr": "manifest",
+  "en": "manifest-en"
+ },
+ "t007": {
+  "fr": "Tourne ton téléphone pour jouer",
+  "en": "Turn your phone upright to play"
+ },
+ "t008": {
+  "fr": "Rentrer au village",
+  "en": "Back to the village"
+ },
+ "t009": {
+  "fr": "Berges",
+  "en": "Shores"
+ },
+ "t010": {
+  "fr": "try{if(!localStorage.getItem('ab_lang')&&!localStorage.getItem('ab_save')&&!/^fr/i.test(navigator.language||'')&&!/en\\.html$/.test(location.pathname))location.replace('en.html')}catch(e){}/*LANG*/",
+  "en": ""
+ },
+ "t011": {
+  "fr": "const RC",
+  "en": "const RN={commun:'common',rare:'rare',épique:'epic',légendaire:'legendary'},RC"
+ },
+ "t012": {
+  "fr": "Eaux troubles",
+  "en": "Murky Waters"
+ },
+ "t013": {
+  "fr": "Abysses",
+  "en": "Abyss"
+ },
+ "t014": {
+  "fr": "Grotte engloutie",
+  "en": "Sunken Grotto"
+ },
+ "t015": {
+  "fr": "Fosse originelle",
+  "en": "Primordial Trench"
+ },
+ "t016": {
+  "fr": "Gardon argenté",
+  "en": "Silver Roach"
+ },
+ "t017": {
+  "fr": "Perche rayée",
+  "en": "Striped Perch"
+ },
+ "t018": {
+  "fr": "Carpe dorée",
+  "en": "Golden Carp"
+ },
+ "t019": {
+  "fr": "Brochet vert",
+  "en": "Green Pike"
+ },
+ "t020": {
+  "fr": "Anguille électrique",
+  "en": "Electric Eel"
+ },
+ "t021": {
+  "fr": "Silure des vases",
+  "en": "Mud Catfish"
+ },
+ "t022": {
+  "fr": "Poisson-lanterne",
+  "en": "Lanternfish"
+ },
+ "t023": {
+  "fr": "Raie fantôme",
+  "en": "Ghost Ray"
+ },
+ "t024": {
+  "fr": "Serpent d\\'abîme",
+  "en": "Abyss Serpent"
+ },
+ "t025": {
+  "fr": "Poisson aveugle",
+  "en": "Blind Cavefish"
+ },
+ "t026": {
+  "fr": "Esturgeon antique",
+  "en": "Ancient Sturgeon"
+ },
+ "t027": {
+  "fr": "Murène de cristal",
+  "en": "Crystal Moray"
+ },
+ "t028": {
+  "fr": "Cœlacanthe",
+  "en": "Coelacanth"
+ },
+ "t029": {
+  "fr": "Léviathan des profondeurs",
+  "en": "Leviathan of the Deep"
+ },
+ "t030": {
+  "fr": "Le ",
+  "en": "The "
+ },
+ "t031": {
+  "fr": " a mordu ",
+  "en": " has bitten"
+ },
+ "t032": {
+  "fr": "Un coffre ",
+  "en": "A chest"
+ },
+ "t033": {
+  "fr": "Il contenait ",
+  "en": "It held "
+ },
+ "t034": {
+  "fr": "Une vieille botte",
+  "en": "An old boot"
+ },
+ "t035": {
+  "fr": "Pleine d'eau, et rien d'autre",
+  "en": "Full of water, and nothing else"
+ },
+ "t036": {
+  "fr": "Une perle d'abîme",
+  "en": "An abyss pearl"
+ },
+ "t037": {
+  "fr": "Canne',l:'Ligne',a:'Appât'}[k]} : +1 niveau, offert",
+  "en": "Rod',l:'Line',a:'Bait'}[k]}: +1 level, free"
+ },
+ "t038": {
+  "fr": "Relancer",
+  "en": "Cast again"
+ },
+ "t039": {
+  "fr": "Poissons rares ou mieux ",
+  "en": "Rare fish or better "
+ },
+ "t040": {
+  "fr": "Un poisson de ",
+  "en": "A fish of "
+ },
+ "t041": {
+  "fr": " cm et plus",
+  "en": " cm or more"
+ },
+ "t042": {
+  "fr": "cassé",
+  "en": "snapped"
+ },
+ "t043": {
+  "fr": "L'aube se lève : encore quelques lancers",
+  "en": "Dawn is breaking: a few more casts"
+ },
+ "t044": {
+  "fr": "Grand contrat expiré",
+  "en": "Grand contract expired"
+ },
+ "t045": {
+  "fr": "Nouveau grand contrat ",
+  "en": "New grand contract"
+ },
+ "t046": {
+  "fr": "Grand contrat rempli ",
+  "en": "Grand contract fulfilled"
+ },
+ "t047": {
+  "fr": "Livré pour le grand contrat ",
+  "en": "Delivered for the grand contract "
+ },
+ "t048": {
+  "fr": "Panier plein ",
+  "en": "Basket full"
+ },
+ "t049": {
+  "fr": " relâché",
+  "en": " released"
+ },
+ "t050": {
+  "fr": "Trophée pour le Musée ",
+  "en": "Trophy for the Museum"
+ },
+ "t051": {
+  "fr": "Trophée mis de côté pour le futur Musée ",
+  "en": "Trophy set aside for the future Museum"
+ },
+ "t052": {
+  "fr": "Nouveau record au Musée ",
+  "en": "New Museum record"
+ },
+ "t053": {
+  "fr": "F.rar",
+  "en": "RN[F.rar]"
+ },
+ "t054": {
+  "fr": "Panier ",
+  "en": "Basket "
+ },
+ "t055": {
+  "fr": "Nouvelle espèce dans ta collection ",
+  "en": "New species in your collection"
+ },
+ "t056": {
+  "fr": "Nouveau record pour cette espèce ",
+  "en": "New record for this species"
+ },
+ "t057": {
+  "fr": "Continuer",
+  "en": "Continue"
+ },
+ "t058": {
+  "fr": "Canne','Touche plus rapide, enroule plus vite",
+  "en": "Rod','Faster bites, faster reeling"
+ },
+ "t059": {
+  "fr": "Ligne','Prises plus grandes, tension réduite",
+  "en": "Line','Bigger catches, less tension"
+ },
+ "t060": {
+  "fr": "Appât','Plus de prises rares, épiques et légendaires",
+  "en": "Bait','More rare, epic and legendary catches"
+ },
+ "t061": {
+  "fr": "Panier','+3 places par niveau",
+  "en": "Basket','+3 slots per level"
+ },
+ "t062": {
+  "fr": "Étal','+1 emplacement sur l\\'étal par niveau ",
+  "en": "Stall','+1 stall slot per level "
+ },
+ "t063": {
+  "fr": "Lanterne','+2 lancers de nuit par niveau",
+  "en": "Lantern','+2 night casts per level"
+ },
+ "t064": {
+  "fr": "Fumoir','+3 emplacements au fumoir par niveau",
+  "en": "Smokehouse','+3 smokehouse slots per level"
+ },
+ "t065": {
+  "fr": "Les communs',r:'Les rares",
+  "en": "The commons',r:'The rares"
+ },
+ "t066": {
+  "fr": "Les épiques',l:'Les légendaires",
+  "en": "The epics',l:'The legendaries"
+ },
+ "t067": {
+  "fr": " place au panier",
+  "en": " basket slot"
+ },
+ "t068": {
+  "fr": " sur les prix",
+  "en": " on prices"
+ },
+ "t069": {
+  "fr": " lancers par nuit",
+  "en": " casts per night"
+ },
+ "t070": {
+  "fr": " client à l'étal",
+  "en": " customer at the stall"
+ },
+ "t071": {
+  "fr": "Les profondeurs',b:'La clé de la Légende du lac",
+  "en": "The depths',b:'The key to the Legend of the Lake"
+ },
+ "t072": {
+  "fr": "Légende du lac",
+  "en": "Legend of the Lake"
+ },
+ "t073": {
+  "fr": "Gardien de la Fosse",
+  "en": "Keeper of the Trench"
+ },
+ "t074": {
+  "fr": "Explorateur des grottes",
+  "en": "Grotto Explorer"
+ },
+ "t075": {
+  "fr": "Seigneur des Abysses",
+  "en": "Lord of the Abyss"
+ },
+ "t076": {
+  "fr": "Pêcheur de passage','Habitué du quai','Fournisseur du village','Maître de l\\'étal','Maître pêcheur','Figure du lac",
+  "en": "Passing Angler','Dock Regular','Village Supplier','Stall Master','Master Angler','Lake Notable"
+ },
+ "t077": {
+  "fr": "Jour de marché",
+  "en": "Market day"
+ },
+ "t078": {
+  "fr": " clients de plus à l\\'étal",
+  "en": " more customers at the stall"
+ },
+ "t079": {
+  "fr": "Fête du village',d:'Tous les poissons valent 20 % de plus",
+  "en": "Village fair',d:'All fish are worth 20 % more"
+ },
+ "t080": {
+  "fr": "Nuit de pluie',d:'Les poissons rares mordent plus",
+  "en": "Rainy night',d:'Rare fish bite more"
+ },
+ "t081": {
+  "fr": "Brume du lac",
+  "en": "Lake mist"
+ },
+ "t082": {
+  "fr": " lancers de nuit en plus",
+  "en": " extra night casts"
+ },
+ "t083": {
+  "fr": "Jour calme',d:'Rien de particulier aujourd\\'hui",
+  "en": "Quiet day',d:'Nothing special today"
+ },
+ "t084": {
+  "fr": "Étal",
+  "en": "Stall"
+ },
+ "t085": {
+  "fr": "Atelier",
+  "en": "Workshop"
+ },
+ "t086": {
+  "fr": "Port",
+  "en": "Harbor"
+ },
+ "t087": {
+  "fr": "Taverne",
+  "en": "Tavern"
+ },
+ "t088": {
+  "fr": "Fumoir",
+  "en": "Smokehouse"
+ },
+ "t089": {
+  "fr": "Musée",
+  "en": "Museum"
+ },
+ "t090": {
+  "fr": "Niv. ",
+  "en": "Lvl "
+ },
+ "t091": {
+  "fr": "Port rénové",
+  "en": "Harbor renovated"
+ },
+ "t092": {
+  "fr": "NUIT':'JOUR",
+  "en": "NIGHT':'DAY"
+ },
+ "t093": {
+  "fr": "Nouveau ",
+  "en": "New"
+ },
+ "t094": {
+  "fr": " ",
+  "en": ""
+ },
+ "t095": {
+  "fr": " poisson${fumN>1?'s fumés récupérés':' fumé récupéré'}",
+  "en": " smoked fish collected"
+ },
+ "t096": {
+  "fr": " niv. ",
+  "en": " lvl "
+ },
+ "t097": {
+  "fr": "Demande ",
+  "en": "Wanted"
+ },
+ "t098": {
+  "fr": "Grand contrat ",
+  "en": "Grand contract"
+ },
+ "t099": {
+  "fr": "Reste ",
+  "en": "Time left: "
+ },
+ "t100": {
+  "fr": " j · récompense ",
+  "en": " d · reward "
+ },
+ "t101": {
+  "fr": "La nuit est tombée. Rends-toi au port pour choisir où pêcher.':'Vends d\\'abord au marché : la nuit tombe après la vente",
+  "en": "Night has fallen. Head to the harbor to choose where to fish.':'Sell at the market first: night falls after the sale"
+ },
+ "t102": {
+  "fr": " Les autres bâtiments se débloquent avec ta réputation",
+  "en": " Other buildings unlock with your reputation"
+ },
+ "t103": {
+  "fr": "Prochaine zone ",
+  "en": "Next zone"
+ },
+ "t104": {
+  "fr": "Musée complet",
+  "en": "Museum complete"
+ },
+ "t105": {
+  "fr": "Trophée manquant ",
+  "en": "Missing trophy"
+ },
+ "t106": {
+  "fr": " et 1 autre",
+  "en": " and 1 more"
+ },
+ "t107": {
+  "fr": "Musée ",
+  "en": "Museum"
+ },
+ "t108": {
+  "fr": " trophées",
+  "en": " trophies"
+ },
+ "t109": {
+  "fr": "Aucune",
+  "en": "None"
+ },
+ "t110": {
+  "fr": "Commande en cours",
+  "en": "Current order"
+ },
+ "t111": {
+  "fr": "Récompense ",
+  "en": "Reward "
+ },
+ "t112": {
+  "fr": "Le messager la prend à ton étal",
+  "en": "The messenger collects it at your stall"
+ },
+ "t113": {
+  "fr": "Demande du village",
+  "en": "Village request"
+ },
+ "t114": {
+  "fr": "Payé ×2 aujourd'hui",
+  "en": "Paid ×2 today"
+ },
+ "t115": {
+  "fr": "Événement du jour",
+  "en": "Event of the day"
+ },
+ "t116": {
+  "fr": "Rumeurs du jour",
+  "en": "Today’s rumors"
+ },
+ "t117": {
+  "fr": "En hausse",
+  "en": "Rising"
+ },
+ "t118": {
+  "fr": "En baisse",
+  "en": "Falling"
+ },
+ "t119": {
+  "fr": "Changer la commande ",
+  "en": "Change order "
+ },
+ "t120": {
+  "fr": "Retour",
+  "en": "Back"
+ },
+ "t121": {
+  "fr": "fumé",
+  "en": "smoked"
+ },
+ "t122": {
+  "fr": "Villageois",
+  "en": "Villager"
+ },
+ "t123": {
+  "fr": "paie 15 % de plus",
+  "en": "pays 15 % more"
+ },
+ "t124": {
+  "fr": "rare ou mieux seulement, gros pourboire en réputation",
+  "en": "rare or better only, big reputation tip"
+ },
+ "t125": {
+  "fr": "Radin",
+  "en": "Penny-pincher"
+ },
+ "t126": {
+  "fr": "perte de réputation doublée si trop cher",
+  "en": "double reputation loss if too pricey"
+ },
+ "t127": {
+  "fr": "Généreux",
+  "en": "Generous"
+ },
+ "t128": {
+  "fr": "ni perte ni bonus de réputation sur le prix",
+  "en": "no reputation gain or loss on price"
+ },
+ "t129": {
+  "fr": "Collectionneur",
+  "en": "Collector"
+ },
+ "t130": {
+  "fr": "espèce jamais vendue, gros bonus de réputation",
+  "en": "species never sold, big reputation bonus"
+ },
+ "t131": {
+  "fr": "Messager de la taverne",
+  "en": "Tavern messenger"
+ },
+ "t132": {
+  "fr": "fait avancer ta commande",
+  "en": "moves your order forward"
+ },
+ "t133": {
+  "fr": "Aubergiste",
+  "en": "Innkeeper"
+ },
+ "t134": {
+  "fr": "achète un lot de poissons fumés, prix de gros",
+  "en": "buys a lot of smoked fish, wholesale price"
+ },
+ "t135": {
+  "fr": "Choisis les poissons de ta vitrine, puis ouvre l'étal. Après la vente, la nuit tombe",
+  "en": "Pick the fish for your display, then open the stall. After the sale, night falls"
+ },
+ "t136": {
+  "fr": "Client ",
+  "en": "Customer "
+ },
+ "t137": {
+  "fr": " clients restants",
+  "en": " customers left"
+ },
+ "t138": {
+  "fr": " clients",
+  "en": " customers"
+ },
+ "t139": {
+  "fr": "Carnet",
+  "en": "Ledger"
+ },
+ "t140": {
+  "fr": "Terminer",
+  "en": "Finish"
+ },
+ "t141": {
+  "fr": "Étal fermé",
+  "en": "Stall closed"
+ },
+ "t142": {
+  "fr": "Réputation ",
+  "en": "Reputation "
+ },
+ "t143": {
+  "fr": "Bons poissons présentés ",
+  "en": "Right fish shown"
+ },
+ "t144": {
+  "fr": " fumés ",
+  "en": " smoked "
+ },
+ "t145": {
+  "fr": "Retirer",
+  "en": "Remove"
+ },
+ "t146": {
+  "fr": " fumé",
+  "en": " smoked"
+ },
+ "t147": {
+  "fr": "Passer",
+  "en": "Skip"
+ },
+ "t148": {
+  "fr": "sans pénalité",
+  "en": "no penalty"
+ },
+ "t149": {
+  "fr": "Retour au village",
+  "en": "Back to the village"
+ },
+ "t150": {
+  "fr": "Prix de base",
+  "en": "Base price"
+ },
+ "t151": {
+  "fr": "Ouvrir l'étal",
+  "en": "Open the stall"
+ },
+ "t152": {
+  "fr": "Vitrine ",
+  "en": "Display "
+ },
+ "t153": {
+  "fr": " touche un poisson pour l\\'exposer",
+  "en": " tap a fish to display it"
+ },
+ "t154": {
+  "fr": "Plus de poisson dans le panier",
+  "en": "No more fish in the basket"
+ },
+ "t155": {
+  "fr": "Il me faut des fumés pour l'auberge : je te prends un lot de ",
+  "en": "I need smoked fish for the inn: I’ll take a lot of "
+ },
+ "t156": {
+  "fr": "Un client a repéré ",
+  "en": "A customer spotted "
+ },
+ "t157": {
+  "fr": " dans ta vitrine ",
+  "en": " in your display"
+ },
+ "t158": {
+  "fr": "Je cherche ",
+  "en": "I’m looking for"
+ },
+ "t159": {
+  "fr": "Je cherche un poisson ${cu.want.v}",
+  "en": "I’m looking for ${({commun:'a common',rare:'a rare',épique:'an epic',légendaire:'a legendary'})[cu.want.v]} fish"
+ },
+ "t160": {
+  "fr": "Je cherche un poisson rare ou mieux.':`Je cherche un poisson de ",
+  "en": "I’m looking for a rare fish or better.':`I’m looking for a fish of "
+ },
+ "t161": {
+  "fr": " cm ou plus",
+  "en": " cm or more"
+ },
+ "t162": {
+  "fr": "Lot de ",
+  "en": "Lot of "
+ },
+ "t163": {
+  "fr": " fumés",
+  "en": " smoked"
+ },
+ "t164": {
+  "fr": "Marché conclu, merci ",
+  "en": "Deal, thank you"
+ },
+ "t165": {
+  "fr": "C\\'est cher… mais l\\'auberge en a besoin.':'Parfait pour l\\'auberge.'} Lot de ",
+  "en": "Pricey… but the inn needs it.':'Perfect for the inn.'} Lot of "
+ },
+ "t166": {
+  "fr": " fumés ",
+  "en": " smoked"
+ },
+ "t167": {
+  "fr": " rép",
+  "en": " rep"
+ },
+ "t168": {
+  "fr": " Commande ",
+  "en": " Order "
+ },
+ "t169": {
+  "fr": " Commande terminée ",
+  "en": " Order complete"
+ },
+ "t170": {
+  "fr": "Quelle affaire, merci ",
+  "en": "What a bargain, thanks"
+ },
+ "t171": {
+  "fr": "Un peu cher… mais d\\'accord.':'Parfait, merci",
+  "en": "A bit pricey… but fine.':'Perfect, thanks"
+ },
+ "t172": {
+  "fr": "le bon poisson ",
+  "en": "the right fish"
+ },
+ "t173": {
+  "fr": "Le client repart",
+  "en": "The customer leaves"
+ },
+ "t174": {
+  "fr": "Rien à vendre aujourd'hui : l'étal ferme et la nuit tombe.\":`Étal fermé ",
+  "en": "Nothing to sell today: the stall closes and night falls.\":`Stall closed"
+ },
+ "t175": {
+  "fr": " réputation ",
+  "en": " reputation "
+ },
+ "t176": {
+  "fr": " La nuit tombe",
+  "en": " Night falls"
+ },
+ "t177": {
+  "fr": "demande ",
+  "en": "wanted "
+ },
+ "t178": {
+  "fr": "hausse ",
+  "en": "rising "
+ },
+ "t179": {
+  "fr": "baisse ",
+  "en": "falling "
+ },
+ "t180": {
+  "fr": "fête ",
+  "en": "fair "
+ },
+ "t181": {
+  "fr": "prix normal",
+  "en": "normal price"
+ },
+ "t182": {
+  "fr": "Aucune espèce découverte",
+  "en": "No species discovered yet"
+ },
+ "t183": {
+  "fr": "Carnet de prix','prix du jour selon la taille",
+  "en": "Price ledger','today’s price by size"
+ },
+ "t184": {
+  "fr": "Espèces connues<em>bonus inclus",
+  "en": "Known species<em>bonus included"
+ },
+ "t185": {
+  "fr": "Fermer",
+  "en": "Close"
+ },
+ "t186": {
+  "fr": "La nuit est tombée : l'étal rouvrira demain matin. Rends-toi au port pour pêcher",
+  "en": "Night has fallen: the stall reopens tomorrow morning. Head to the harbor to fish"
+ },
+ "t187": {
+  "fr": "D'accord",
+  "en": "Deal"
+ },
+ "t188": {
+  "fr": "Termine ta prise avant de rentrer",
+  "en": "Finish your catch before heading back"
+ },
+ "t189": {
+  "fr": "Rentrer au village ",
+  "en": "Back to the village"
+ },
+ "t190": {
+  "fr": "La nuit s'arrête ici et le jour se lève",
+  "en": "The night ends here and the day begins"
+ },
+ "t191": {
+  "fr": "Rentrer",
+  "en": "Go back"
+ },
+ "t192": {
+  "fr": "Rester pêcher",
+  "en": "Keep fishing"
+ },
+ "t193": {
+  "fr": "Pêche",
+  "en": "Fishing"
+ },
+ "t194": {
+  "fr": "Commerce",
+  "en": "Trade"
+ },
+ "t195": {
+  "fr": "Rares ou mieux",
+  "en": "Rare or better"
+ },
+ "t196": {
+  "fr": "Épiques ou mieux",
+  "en": "Epic or better"
+ },
+ "t197": {
+  "fr": "Légendaires",
+  "en": "Legendaries"
+ },
+ "t198": {
+  "fr": "Attente avant la touche",
+  "en": "Wait before a bite"
+ },
+ "t199": {
+  "fr": "Chance de trophée",
+  "en": "Trophy chance"
+ },
+ "t200": {
+  "fr": "Places au panier",
+  "en": "Basket slots"
+ },
+ "t201": {
+  "fr": "Emplacements de vitrine",
+  "en": "Display slots"
+ },
+ "t202": {
+  "fr": "Lancers de nuit",
+  "en": "Night casts"
+ },
+ "t203": {
+  "fr": "Emplacements du fumoir",
+  "en": "Smokehouse slots"
+ },
+ "t204": {
+  "fr": "Prix ",
+  "en": "Prices "
+ },
+ "t205": {
+  "fr": " clients ",
+  "en": " customers "
+ },
+ "t206": {
+  "fr": "Niveau max':'rép",
+  "en": "Max level':'rep"
+ },
+ "t207": {
+  "fr": " : puissance en profondeur",
+  "en": ": full power in the depths"
+ },
+ "t208": {
+  "fr": "Ouvre d'abord l'étal : la nuit ne tombe qu'après la vente",
+  "en": "Open the stall first: night only falls after the sale"
+ },
+ "t209": {
+  "fr": "Ton équipement y est à pleine puissance':`Matériel limité au niv. ",
+  "en": "Your gear is at full power here':`Gear limited to lvl "
+ },
+ "t210": {
+  "fr": "Prendre le large cette nuit",
+  "en": "Head out tonight"
+ },
+ "t211": {
+  "fr": "Partir",
+  "en": "Set sail"
+ },
+ "t212": {
+  "fr": "Poissons redoutables':'Nouveaux poissons, plus rares",
+  "en": "Fearsome fish':'New fish, rarer ones"
+ },
+ "t213": {
+  "fr": "Grand contrat',\"Un client important passe commande. Les poissons qui correspondent sont livrés dès que tu les pêches, et la récompense tombe quand le contrat est rempli. Attention au délai ",
+  "en": "Grand contract',\"An important customer places an order. Matching fish are delivered as soon as you catch them, and the reward comes when the contract is fulfilled. Watch the deadline"
+ },
+ "t214": {
+  "fr": "Équipement des profondeurs',\"L'Atelier propose maintenant les niveaux 7 et 8 de la Canne et de la Ligne. Eux seuls rendent toute leur puissance à ton matériel en eaux profondes",
+  "en": "Deep-water gear',\"The Workshop now offers levels 7 and 8 of the Rod and the Line. Only they give your gear its full power in deep waters"
+ },
+ "t215": {
+  "fr": "Eaux profondes',\"Ici, ta canne et ta ligne ne donnent pas toute leur puissance : les grands poissons tirent plus fort. Quand l'un d'eux va plonger, relâche tout avant qu'il ne parte, sinon la ligne casse",
+  "en": "Deep waters',\"Down here, your rod and line lose part of their power: big fish pull harder. When one is about to dive, let go completely before it goes, or the line snaps"
+ },
+ "t216": {
+  "fr": "Bienvenue au village',\"Chaque jour, tu vends ta pêche à l'étal. Une fois l'étal fermé, la nuit tombe : pars pêcher depuis le Port. Ta réputation débloque de nouveaux bâtiments",
+  "en": "Welcome to the village',\"Each day, you sell your catch at the stall. Once the stall closes, night falls: go fishing from the Harbor. Your reputation unlocks new buildings"
+ },
+ "t217": {
+  "fr": "Le Port',\"Choisis où pêcher cette nuit. Les zones plus lointaines s'achètent ici et cachent des poissons plus rares",
+  "en": "The Harbor',\"Choose where to fish tonight. Farther zones are bought here and hide rarer fish"
+ },
+ "t218": {
+  "fr": "La pêche',\"Touche une ombre pour lancer. Quand le bouchon plonge, touche vite ! Ensuite, maintiens le doigt pour enrouler et lâche quand le poisson tire, sinon la ligne casse. S'il saute, touche l'écran",
+  "en": "Fishing',\"Tap a shadow to cast. When the float dips, tap fast! Then hold your finger to reel in and let go when the fish pulls, or the line snaps. If it jumps, tap the screen"
+ },
+ "t219": {
+  "fr": "L'étal\",\"Choisis les poissons de ta vitrine : les passants peuvent les repérer et les payer plus cher. Puis ouvre l'étal",
+  "en": "The stall\",\"Pick the fish for your display: passers-by may spot them and pay more. Then open the stall"
+ },
+ "t220": {
+  "fr": "Les clients',\"Touche un poisson du panier qui correspond à la demande (coche verte), puis choisis ton prix",
+  "en": "Customers',\"Tap a fish in the basket that matches the request (green check), then pick your price"
+ },
+ "t221": {
+  "fr": " fait gagner de la réputation",
+  "en": " earns reputation"
+ },
+ "t222": {
+  "fr": " rapporte plus d'or mais en fait perdre",
+  "en": " brings more gold but costs reputation"
+ },
+ "t223": {
+  "fr": "L'Atelier\",\"Améliore ton matériel et ton commerce. Chaque niveau coûte plus cher que le précédent : choisis tes priorités",
+  "en": "The Workshop\",\"Upgrade your gear and your trade. Each level costs more than the last: choose your priorities"
+ },
+ "t224": {
+  "fr": "La Taverne',\"Le messager passe à ton étal chercher les poissons de ta commande. Les rumeurs disent quels poissons se vendent mieux aujourd'hui",
+  "en": "The Tavern',\"The messenger stops by your stall to collect the fish for your order. Rumors tell which fish sell better today"
+ },
+ "t225": {
+  "fr": "La collection',\"Un trophée, c'est un poisson parmi les 15 % les plus grands de son espèce. Une série complète donne un bonus permanent dès l'ouverture du Musée",
+  "en": "The collection',\"A trophy is a fish among the largest 15 % of its species. A complete set gives a permanent bonus once the Museum opens"
+ },
+ "t226": {
+  "fr": "Le Fumoir',\"Les poissons fumés reviennent le lendemain avec 60 % de valeur en plus et ne prennent plus de place. L'Aubergiste vient les acheter par lots à l'étal",
+  "en": "The Smokehouse',\"Smoked fish come back the next day worth 60 % more and take up no space. The Innkeeper buys them in lots at the stall"
+ },
+ "t227": {
+  "fr": "Compris",
+  "en": "Got it"
+ },
+ "t228": {
+  "fr": "31 octobre ",
+  "en": "October 31, "
+ },
+ "t229": {
+  "fr": "Petits écrans : les fenêtres trop hautes (Options) se font défiler jusqu’en haut, curseurs de volume compris.','Boutons plus faciles à toucher ",
+  "en": "Small screens: tall windows (Options) now scroll all the way up, volume sliders included.','Easier-to-tap buttons"
+ },
+ "t230": {
+  "fr": " Panier, Carnet, achats de l’Atelier, vitrine de l’étal, fumoir.','On peut zoomer à deux doigts pour agrandir les textes (sauf sur le lac).','Téléphone couché : un écran demande de le remettre droit.','Musiques téléchargées seulement à la première écoute, et mieux lues hors connexion sur iPhone",
+  "en": " Basket, Ledger, Workshop purchases, stall display, Smokehouse.','Pinch to zoom now works to enlarge text (except on the lake).','Phone held sideways: a screen asks you to turn it upright.','Music is downloaded only when first played, and plays better offline on iPhone"
+ },
+ "t231": {
+  "fr": "29 octobre ",
+  "en": "October 29, "
+ },
+ "t232": {
+  "fr": "Démarrage plus rapide : l’écran titre s’affiche sans attendre toutes les images, et la musique se charge au premier toucher.','Écran titre : un bouton « Hub » ramène aux autres jeux du studio.','Options : bouton « Retour au hub », et le même ordre que dans les autres jeux du studio",
+  "en": "Faster start: the title screen no longer waits for every image, and the music loads on your first tap.','Title screen: a “Hub” button takes you back to the studio’s other games.','Options: a “Back to the hub” button, in the same order as the studio’s other games"
+ },
+ "t233": {
+  "fr": "26 octobre ",
+  "en": "October 26, "
+ },
+ "t234": {
+  "fr": "Options : crédits du jeu",
+  "en": "Options: game credits"
+ },
+ "t235": {
+  "fr": "19 octobre ",
+  "en": "October 19, "
+ },
+ "t236": {
+  "fr": "Options : volume de la musique et des bruitages séparés, vibrations à activer ou couper, signaler un bug, soutenir le studio, retour à l’écran titre.','Écran titre : « Touche pour commencer »",
+  "en": "Options: separate music and sound effects volume, vibration on or off, bug report, support the studio, back to the title screen"
+ },
+ "t237": {
+  "fr": "Le bouton retour du téléphone ferme la fenêtre ouverte et ramène au village au lieu de quitter le jeu. Au lac, il propose de rentrer au village ; au village, de revenir à l’écran titre ; à l’écran titre, d’aller au hub Keismey Studio",
+  "en": "The phone’s back button now closes the open window and returns to the village instead of leaving the game. On the lake it offers to head back to the village; in the village, to go back to the title screen; on the title screen, to go to the Keismey Studio hub"
+ },
+ "t238": {
+  "fr": "6 octobre ",
+  "en": "October 6, "
+ },
+ "t239": {
+  "fr": "Correction : l’installation de l’appli sur téléphone.','Correction : le jeu ne touche plus aux données hors ligne de tes autres jeux du même site",
+  "en": "Fix: installing the app on phones.','Fix: the game no longer touches the offline data of other games on the same site"
+ },
+ "t240": {
+  "fr": "Écran de démarrage : logo Keismey Studio, puis écran titre.','Le jeu se joue aussi sur ordinateur, dans une colonne au format téléphone.','Nouveau bouton « Notes de mise à jour » dans les Réglages",
+  "en": "Startup screen: Keismey Studio logo, then a title screen.','The game can also be played on a computer, in a phone-shaped column.','New “Patch notes” button in Settings"
+ },
+ "t241": {
+  "fr": "Première version en ligne.','5 zones de pêche et 14 espèces, dont le Léviathan des profondeurs.','Grotte et Fosse : matériel limité, poissons qui plongent, ligne qui peut casser.','Équipement des profondeurs : Canne et Ligne niveaux 7 et 8.','Grands contrats à partir du niveau 10.','Sauvegarde et chargement de partie, installation sur l’écran d’accueil, jeu hors ligne.','Version anglaise",
+  "en": "First online release.','5 fishing zones and 14 species, including the Leviathan of the Deep.','Grotto and Trench: limited gear, diving fish, a line that can snap.','Deep-water gear: Rod and Line levels 7 and 8.','Grand contracts from level 10.','Save and load your game, install to the home screen, offline play.','English version"
+ },
+ "t242": {
+  "fr": "Notes de mise à jour",
+  "en": "Patch notes"
+ },
+ "t243": {
+  "fr": "Fermer':'Retour",
+  "en": "Close':'Back"
+ },
+ "t244": {
+  "fr": "Musique",
+  "en": "Music"
+ },
+ "t245": {
+  "fr": "Bruitages",
+  "en": "Sound effects"
+ },
+ "t246": {
+  "fr": "Vibrations ",
+  "en": "Vibration "
+ },
+ "t247": {
+  "fr": "oui':'non",
+  "en": "on':'off"
+ },
+ "t248": {
+  "fr": "en')\">English",
+  "en": "fr')\">Français"
+ },
+ "t249": {
+  "fr": "Sauvegarder ma partie",
+  "en": "Save my game"
+ },
+ "t250": {
+  "fr": "Charger une partie",
+  "en": "Load a game"
+ },
+ "t251": {
+  "fr": "Installer le jeu",
+  "en": "Install the game"
+ },
+ "t252": {
+  "fr": "Écran titre",
+  "en": "Title screen"
+ },
+ "t253": {
+  "fr": "fr')\">Signaler un bug",
+  "en": "en')\">Report a bug"
+ },
+ "t254": {
+  "fr": "Soutenir le studio",
+  "en": "Support the studio"
+ },
+ "t255": {
+  "fr": "Retour au hub",
+  "en": "Back to the hub"
+ },
+ "t256": {
+  "fr": "Dernière sauvegarde : jour ",
+  "en": "Last save: day "
+ },
+ "t257": {
+  "fr": "Aucune sauvegarde exportée pour l\\'instant",
+  "en": "No save exported yet"
+ },
+ "t258": {
+  "fr": "Pense à refaire une sauvegarde",
+  "en": "Remember to make a new save"
+ },
+ "t259": {
+  "fr": "Conception et direction : Keismey · Développé avec l’aide d’outils IA",
+  "en": "Design and direction: Keismey · Developed with the help of AI tools"
+ },
+ "t260": {
+  "fr": "Garde ce code ou le fichier en lieu sûr : il permet de retrouver ta partie sur un autre appareil, dans l'appli installée, ou si le navigateur efface ses données",
+  "en": "Keep this code or file somewhere safe: it lets you recover your game on another device, in the installed app, or if the browser clears its data"
+ },
+ "t261": {
+  "fr": "Copier le code",
+  "en": "Copy the code"
+ },
+ "t262": {
+  "fr": "Télécharger le fichier",
+  "en": "Download the file"
+ },
+ "t263": {
+  "fr": "Code copié",
+  "en": "Code copied"
+ },
+ "t264": {
+  "fr": "Sélectionne le code et copie-le à la main",
+  "en": "Select the code and copy it by hand"
+ },
+ "t265": {
+  "fr": "Fichier téléchargé",
+  "en": "File downloaded"
+ },
+ "t266": {
+  "fr": "Téléchargement impossible ici : copie plutôt le code",
+  "en": "Download not possible here: copy the code instead"
+ },
+ "t267": {
+  "fr": "Colle le code de sauvegarde, ou choisis le fichier",
+  "en": "Paste the save code, or choose the file"
+ },
+ "t268": {
+  "fr": "Choisir un fichier",
+  "en": "Choose a file"
+ },
+ "t269": {
+  "fr": "Charger",
+  "en": "Load"
+ },
+ "t270": {
+  "fr": "Fichier illisible",
+  "en": "Unreadable file"
+ },
+ "t271": {
+  "fr": "Code invalide : vérifie qu\\'il est complet",
+  "en": "Invalid code: check that it is complete"
+ },
+ "t272": {
+  "fr": "Remplacer ta partie ",
+  "en": "Replace your game"
+ },
+ "t273": {
+  "fr": "Ta partie actuelle (jour ",
+  "en": "Your current game (day "
+ },
+ "t274": {
+  "fr": " sera remplacée par celle du <b>jour ",
+  "en": " will be replaced by the one from <b>day "
+ },
+ "t275": {
+  "fr": " espèce${Object.keys(q.rec).length>1?'s':''}",
+  "en": " species"
+ },
+ "t276": {
+  "fr": " pièces",
+  "en": " coins"
+ },
+ "t277": {
+  "fr": "Oui, charger",
+  "en": "Yes, load"
+ },
+ "t278": {
+  "fr": "Annuler",
+  "en": "Cancel"
+ },
+ "t279": {
+  "fr": "Impossible d\\'enregistrer sur cet appareil",
+  "en": "Cannot save on this device"
+ },
+ "t280": {
+  "fr": "Dans ",
+  "en": "In "
+ },
+ "t281": {
+  "fr": " touche le bouton <b>Partager</b> (le carré avec une flèche), puis <b>« Sur l\\'écran d\\'accueil »",
+  "en": " tap the <b>Share</b> button (the square with an arrow), then <b>“Add to Home Screen”"
+ },
+ "t282": {
+  "fr": "Ouvre le menu du navigateur ",
+  "en": "Open the browser menu "
+ },
+ "t283": {
+  "fr": " puis <b>« Installer l\\'application »</b> ou <b>« Ajouter à l\\'écran d\\'accueil »",
+  "en": " then <b>“Install app”</b> or <b>“Add to Home Screen”"
+ },
+ "t284": {
+  "fr": "Sur iPhone, le jeu installé ne reprend pas la partie commencée dans Safari. Avant d\\'installer, utilise « Sauvegarder ma partie », puis « Charger une partie » dans le jeu installé",
+  "en": "On iPhone, the installed game does not pick up the game started in Safari. Before installing, use “Save my game”, then “Load a game” in the installed game"
+ },
+ "t285": {
+  "fr": "Nouvelle version disponible <button>Mettre à jour",
+  "en": "New version available <button>Update"
+ },
+ "t286": {
+  "fr": "Plus tard",
+  "en": "Later"
+ },
+ "t287": {
+  "fr": "Musée du lac",
+  "en": "Lake Museum"
+ },
+ "t288": {
+  "fr": " espèces ",
+  "en": " species "
+ },
+ "t289": {
+  "fr": " trophée${ts>1?'s':'",
+  "en": " troph${ts===1?'y':'ies"
+ },
+ "t290": {
+  "fr": " bonus de série dès l\\'ouverture du Musée (niv. ",
+  "en": " set bonuses once the Museum opens (lvl "
+ },
+ "t291": {
+  "fr": "f.rar",
+  "en": "RN[f.rar]"
+ },
+ "t292": {
+  "fr": "Taille ",
+  "en": "Size"
+ },
+ "t293": {
+  "fr": "Record ",
+  "en": "Record"
+ },
+ "t294": {
+  "fr": " prise",
+  "en": " catch"
+ },
+ "t295": {
+  "fr": "s",
+  "en": "es"
+ },
+ "t296": {
+  "fr": "Trophée obtenu ",
+  "en": "Trophy earned"
+ },
+ "t297": {
+  "fr": "Trophée à partir de ",
+  "en": "Trophy from "
+ },
+ "t298": {
+  "fr": "Pas encore pêché ",
+  "en": "Not caught yet "
+ },
+ "t299": {
+  "fr": "Le Musée du lac est complet.<br>On raconte tes prises dans tous les villages de la rive",
+  "en": "The Lake Museum is complete.<br>Every village on the shore tells tales of your catches"
+ },
+ "t300": {
+  "fr": "Jours",
+  "en": "Days"
+ },
+ "t301": {
+  "fr": "Poissons pêchés",
+  "en": "Fish caught"
+ },
+ "t302": {
+  "fr": "Poissons vendus",
+  "en": "Fish sold"
+ },
+ "t303": {
+  "fr": "Or gagné",
+  "en": "Gold earned"
+ },
+ "t304": {
+  "fr": "Meilleure vente",
+  "en": "Best sale"
+ },
+ "t305": {
+  "fr": "Poissons fumés",
+  "en": "Smoked fish"
+ },
+ "t306": {
+  "fr": "Titre",
+  "en": "Title"
+ },
+ "t307": {
+  "fr": "Tu peux continuer à pêcher librement : le lac a encore des records à battre",
+  "en": "You can keep fishing freely: the lake still has records to beat"
+ },
+ "t308": {
+  "fr": "Continuer à pêcher",
+  "en": "Keep fishing"
+ },
+ "t309": {
+  "fr": "Fumage en cours",
+  "en": "Smoking in progress"
+ },
+ "t310": {
+  "fr": "Reviens demain pour récupérer tes poissons fumés",
+  "en": "Come back tomorrow to collect your smoked fish"
+ },
+ "t311": {
+  "fr": "Aucun poisson frais dans ton panier",
+  "en": "No fresh fish in your basket"
+ },
+ "t312": {
+  "fr": "Stock fumé ",
+  "en": "Smoked stock "
+ },
+ "t313": {
+  "fr": "Au fumoir':'Ton panier",
+  "en": "In the smokehouse':'Your basket"
+ },
+ "t314": {
+  "fr": "Fumer ",
+  "en": "Smoke "
+ },
+ "t315": {
+  "fr": " poisson${fumSel.length>1?'s':''} ",
+  "en": " fish "
+ },
+ "t316": {
+  "fr": "Choisis des poissons",
+  "en": "Pick some fish"
+ },
+ "t317": {
+  "fr": "jusqu'à ",
+  "en": "until "
+ },
+ "t318": {
+  "fr": "Stock fumé",
+  "en": "Smoked stock"
+ },
+ "t319": {
+  "fr": " poisson${sm.length>1?'s':''} ",
+  "en": " fish "
+ },
+ "t320": {
+  "fr": "Environ ",
+  "en": "About "
+ },
+ "t321": {
+  "fr": " jour",
+  "en": " day"
+ },
+ "t322": {
+  "fr": " de ventes",
+  "en": " of sales"
+ },
+ "t323": {
+  "fr": " : inutile de fumer davantage pour l\\'instant",
+  "en": ": no need to smoke more for now"
+ },
+ "t324": {
+  "fr": "Aucun poisson fumé pour le moment",
+  "en": "No smoked fish yet"
+ },
+ "t325": {
+  "fr": "Le jour se lève",
+  "en": "Day breaks"
+ },
+ "t326": {
+  "fr": " à relâcher",
+  "en": " to release"
+ },
+ "t327": {
+  "fr": "Le panier est vide",
+  "en": "The basket is empty"
+ },
+ "t328": {
+  "fr": "Panier",
+  "en": "Basket"
+ },
+ "t329": {
+  "fr": " places",
+  "en": " slots"
+ },
+ "t330": {
+  "fr": "Contenu",
+  "en": "Contents"
+ },
+ "t331": {
+  "fr": " poisson${bag.length>1?'s':''}",
+  "en": " fish"
+ },
+ "t332": {
+  "fr": "Si le panier déborde, le poisson le moins précieux est relâché. Les poissons fumés ne comptent pas dans les places",
+  "en": "If the basket overflows, the least valuable fish is released. Smoked fish don’t take up slots"
+ },
+ "t333": {
+  "fr": "Or ",
+  "en": "Gold"
+ },
+ "t334": {
+  "fr": " Réputation ",
+  "en": " Reputation"
+ },
+ "t335": {
+  "fr": "niv. ",
+  "en": "lvl "
+ },
+ "t336": {
+  "fr": "Donner 1 000 or",
+  "en": "Give 1,000 gold"
+ },
+ "t337": {
+  "fr": "Donner 10 000 or",
+  "en": "Give 10,000 gold"
+ },
+ "t338": {
+  "fr": "Donner 500 de réputation",
+  "en": "Give 500 reputation"
+ },
+ "t339": {
+  "fr": "Donner 3 000 de réputation",
+  "en": "Give 3,000 reputation"
+ },
+ "t340": {
+  "fr": "Voir l'écran de fin",
+  "en": "See the ending screen"
+ },
+ "t341": {
+  "fr": " réputation",
+  "en": " reputation"
+ },
+ "t342": {
+  "fr": "Tout effacer ",
+  "en": "Erase everything"
+ },
+ "t343": {
+  "fr": "Ta progression sera perdue définitivement",
+  "en": "Your progress will be lost for good"
+ },
+ "t344": {
+  "fr": "Oui, tout effacer",
+  "en": "Yes, erase everything"
+ },
+ "t345": {
+  "fr": "PANIER ",
+  "en": "BASKET "
+ },
+ "t346": {
+  "fr": "Trop tard, il s'est échappé",
+  "en": "Too late, it got away"
+ },
+ "t347": {
+  "fr": "Il repart vers le fond ",
+  "en": "It’s heading back down"
+ },
+ "t348": {
+  "fr": "La ligne a cassé ",
+  "en": "The line snapped"
+ },
+ "t349": {
+  "fr": "Il s'est décroché",
+  "en": "It got away"
+ },
+ "t350": {
+  "fr": "Touche une ombre pour lancer",
+  "en": "Tap a shadow to cast"
+ },
+ "t351": {
+  "fr": "Touche maintenant ",
+  "en": "Tap now"
+ },
+ "t352": {
+  "fr": "Maintiens pour enrouler",
+  "en": "Hold to reel in"
+ },
+ "t353": {
+  "fr": "Il va plonger !':'Il va tirer ",
+  "en": "It’s about to dive!':'It’s about to pull"
+ },
+ "t354": {
+  "fr": "Il plonge ! Lâche tout ",
+  "en": "It’s diving! Let go"
+ },
+ "t355": {
+  "fr": "Lâche ",
+  "en": "Let go"
+ },
+ "t356": {
+  "fr": "Il saute ! Touche ",
+  "en": "It’s jumping! Tap"
+ },
+ "t357": {
+  "fr": "Il s'épuise ! Enroule ",
+  "en": "It’s tiring! Reel in"
+ },
+ "t358": {
+  "fr": "Prise",
+  "en": "Catch"
+ },
+ "t359": {
+  "fr": "Élans restants ",
+  "en": "Surges left"
+ },
+ "t360": {
+  "fr": "Clique pour commencer':'Touche pour commencer",
+  "en": "Click to start':'Tap to start"
+ },
+ "t361": {
+  "fr": "Retour','Fermer','Annuler','Rester pêcher',\"D'accord\",'Compris','Continuer','Relancer','Retour au village','Continuer à pêcher'",
+  "en": "Back','Close','Cancel','Keep fishing','Deal','Got it','Continue','Cast again','Back to the village'"
+ },
+ "t362": {
+  "fr": "Quitter Abysses ?','Ta partie est enregistrée. Tu retrouves les autres jeux de Keismey Studio.','Aller au hub",
+  "en": "Leave Abysses?','Your game is saved. You\\'ll find the other Keismey Studio games.','Go to the hub"
+ },
+ "t363": {
+  "fr": "Retour à l\\'écran titre ?','Ta partie est enregistrée.','Écran titre",
+  "en": "Back to the title screen?','Your game is saved.','Title screen"
+ }
+}
