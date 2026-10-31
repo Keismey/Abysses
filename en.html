@@ -483,7 +483,8 @@ function musicKick(){if(mKey&&mv>0&&MUSIC[mKey]&&(!mEl||mEl.paused))music(mKey)}
 document.addEventListener('visibilitychange',()=>{if(document.hidden){if(mEl)mEl.pause()}else musicKick()});
 function setV(k,v){v=v/100;if(k==='m'){mv=v;if(!mv&&mEl)mEl.pause();else if(mEl&&!mEl.paused)fade(mEl,.35*mv,200);else music(mKey)}else{sv=v;if(MB)MB.gain.value=.9*sv}save()}
 function sndT(){snd=snd?0:1;save();if(!snd&&mEl)mEl.pause();else music(mKey);opts()}
-const VER='1.0.6';const PN=[
+const VER='1.0.7';const PN=[
+{v:'1.0.7',d:'October 31, 2026',l:['Small screens: tall windows (Options) now scroll all the way up, volume sliders included.','Easier-to-tap buttons: Options, Collection, Basket, Ledger, Workshop purchases, stall display, Smokehouse.','Pinch to zoom now works to enlarge text (except on the lake).','Phone held sideways: a screen asks you to turn it upright.','Music is downloaded only when first played, and plays better offline on iPhone.']},
 {v:'1.0.6',d:'October 29, 2026',l:['Faster start: the title screen no longer waits for every image, and the music loads on your first tap.','Title screen: a “Hub” button takes you back to the studio’s other games.','Options: a “Back to the hub” button, in the same order as the studio’s other games.']},
 {v:'1.0.5',d:'October 26, 2026',l:['Options: game credits.']},
 {v:'1.0.4',d:'October 19, 2026',l:['Options: separate music and sound effects volume, vibration on or off, bug report, support the studio, back to the title screen.']},
