@@ -1,5 +1,8 @@
 // Abysses — service worker. Changer VERSION à chaque mise en ligne.
-const VERSION = 'abysses-1.0.10';
+const VERSION = 'abysses-1.0.11';
+// Musiques (2,8 Mo) : hors du pré-cache, gardées à la première écoute dans un cache à part
+// qui survit aux mises à jour. Changer le numéro si un MP3 change.
+const MEDIA = 'abysses-media-1';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './en.html', './ks-back.js', './ks-studio.js', './manifest-en.webmanifest', './fonts/fonts.css', './fonts/cinzel-600.woff', './fonts/cinzel-700.woff', './fonts/fredoka-400.woff', './fonts/fredoka-600.woff', './fonts/im-fell-english-sc-400.woff',
   './a/0989dc3753eb.webp',
   './a/1069aa76976e.webp',
@@ -48,7 +51,6 @@ const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.
   './a/74d0fda808ee.webp',
   './a/75e83e3367e3.webp',
   './a/7663f49b2292.webp',
-  './a/778b19f55a17.mp3',
   './a/7799cf0da344.webp',
   './a/7e10e1491933.webp',
   './a/85fe90fcfc17.webp',
@@ -76,7 +78,6 @@ const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.
   './a/c4ab9793eb10.webp',
   './a/c70db4fd492c.webp',
   './a/c7f6b49e8337.webp',
-  './a/c91eb1aedba1.mp3',
   './a/c97372f98cf0.webp',
   './a/d47fd7c78867.webp',
   './a/d4daa1fff933.webp',
@@ -112,7 +113,7 @@ self.addEventListener('install', e => {
 self.addEventListener('activate', e => {
   e.waitUntil(
     caches.keys()
-      .then(keys => Promise.all(keys.filter(k => k.startsWith('abysses-') && k !== VERSION && k !== FONTS).map(k => caches.delete(k))))
+      .then(keys => Promise.all(keys.filter(k => k.startsWith('abysses-') && k !== VERSION && k !== FONTS && k !== MEDIA).map(k => caches.delete(k))))
       .then(() => self.clients.claim())
   );
 });
@@ -137,12 +138,15 @@ self.addEventListener('fetch', e => {
     e.respondWith(fetch(req).then(r => { if (r.ok) { const c = r.clone(); caches.open(VERSION).then(x => x.put(req, c)); } return r; }).catch(() => caches.match(req)));
     return;
   }
+  if (url.pathname.endsWith('.mp3')) { e.respondWith(music(e, url)); return; }
   // les pages passent par le réseau d'abord : si VERSION n'est pas changée à une mise en ligne, les joueurs reçoivent quand même la
   // dernière page (les images, au nom haché, restent en cache d'abord). Le cache ne sert que hors connexion.
   if (req.mode === 'navigate' || url.pathname.endsWith('.html') || url.pathname.endsWith('/')) {
     e.respondWith(
       fetch(req.url, { cache: 'no-cache' }).then(r => {
         if (r.ok) { const copy = r.clone(); caches.open(VERSION).then(c => c.put(req, copy)); }
+        // serveur en panne (5xx) : la copie en cache plutôt qu'une page d'erreur
+        else if (r.status >= 500) return caches.match(req, { ignoreSearch: true }).then(hit => hit || r);
         return r;
       }).catch(() => caches.match(req, { ignoreSearch: true }).then(hit => hit || caches.match('./index.html')))
     );
@@ -157,3 +161,24 @@ self.addEventListener('fetch', e => {
     )
   );
 });
+
+// Musique : le navigateur la lit par plages (en-tête Range). Le fichier entier est gardé dans MEDIA ;
+// on y découpe la plage demandée (réponse 206, exigée par Safari pour lire un son servi par le service worker).
+function music(e, url) {
+  const range = e.request.headers.get('range');
+  return caches.match(url.pathname, { cacheName: MEDIA }).then(hit => {
+    if (!hit) {
+      e.waitUntil(fetch(url.pathname).then(full => { if (full.status === 200) return caches.open(MEDIA).then(c => c.put(url.pathname, full)); }).catch(() => {}));
+      return fetch(e.request);
+    }
+    if (!range) return hit;
+    return hit.arrayBuffer().then(buf => {
+      const m = /bytes=(\d*)-(\d*)/.exec(range) || [], size = buf.byteLength;
+      const start = m[1] ? +m[1] : m[2] ? Math.max(0, size - +m[2]) : 0;
+      const end = m[1] && m[2] ? Math.min(+m[2], size - 1) : size - 1;
+      if (start >= size || start > end) return new Response(null, { status: 416, headers: { 'Content-Range': `bytes */${size}` } });
+      return new Response(buf.slice(start, end + 1), { status: 206, headers: {
+        'Content-Type': 'audio/mpeg', 'Content-Range': `bytes ${start}-${end}/${size}`, 'Content-Length': String(end - start + 1), 'Accept-Ranges': 'bytes' } });
+    });
+  });
+}
